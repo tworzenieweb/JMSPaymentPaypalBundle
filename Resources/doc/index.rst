@@ -70,4 +70,4 @@ This can be achieved by explicitly setting *checkout_params* for ExtendedData en
      $paymentId = $ppc->createPayment($instruction->getId(), $amount)->getId();
      
      
-     $result = $this->ppc->approveAndDeposit($paymentId, $amount);
+     $result = $ppc->approveAndDeposit($paymentId, $amount);
